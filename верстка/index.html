@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Auth</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f9fa;
+        }
+        .login-form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .form-group.custom-checkbox {
+            display: flex;
+            align-items: center;
+        }
+        .custom-checkbox input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 login-form">
+            <h2 class="text-center">Auth</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Login" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Pass" required>
+                </div>
+                <div class="form-group custom-checkbox">
+                    <input type="checkbox" id="is-foreign-pc"> <label for="is-foreign-pc">Save user</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

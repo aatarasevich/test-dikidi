@@ -1,0 +1,4 @@
+SELECT type_moto.name AS type_name, COALESCE(COUNT(moto.id), 0) AS total_motorcycles
+FROM type_moto
+LEFT JOIN moto ON type_moto.id = moto.type_id AND moto.out_of_production = 0
+GROUP BY type_moto.name;
